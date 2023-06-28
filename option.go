@@ -54,7 +54,7 @@ func (opts Options) usage(version string) []byte {
 
 func (opts Options) isupdate(version string) ([]byte, error) {
 	buf := bytes.Buffer{}
-	result, err := updater.CheckWithTag("fineke", "pget", version)
+	result, err := updater.CheckWithTag("FineKe", "pget", version)
 	if err != nil {
 		return nil, err
 	}

@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/fineke/pget"
+	"github.com/FineKe/pget"
 )
 
 var version string

@@ -1,4 +1,4 @@
-module github.com/fineke/pget
+module github.com/FineKe/pget
 
 go 1.18
 
