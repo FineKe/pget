@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	"github.com/Code-Hex/updater"
-	"github.com/jessevdk/go-flags"
+	flags "github.com/jessevdk/go-flags"
 	"github.com/pkg/errors"
 )
 
@@ -54,7 +54,7 @@ func (opts Options) usage(version string) []byte {
 
 func (opts Options) isupdate(version string) ([]byte, error) {
 	buf := bytes.Buffer{}
-	result, err := updater.CheckWithTag("Code-Hex", "pget", version)
+	result, err := updater.CheckWithTag("fineke", "pget", version)
 	if err != nil {
 		return nil, err
 	}
